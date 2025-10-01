@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #fdfdfd;
+  color: #222;
+}
+
+.hero {
+  background: linear-gradient(135deg, #ff6b6b, #ffcc70);
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  animation: slideIn 1.2s ease-out;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  animation: fadeIn 2s ease-in;
+}
+
+.how-it-works {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.how-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.how-text {
+  max-width: 400px;
+  text-align: left;
+}
+
+.how-diagram img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease;
+}
+.how-diagram img:hover {
+  transform: scale(1.05);
+}
+
+.products {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.back-home {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.btn {
+  background: #ff6b6b;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #ff3b3b;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #ff1a1a;
+  color: white;
+  font-weight: bold;
+  padding: 15px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  box-shadow: 0 0 25px rgba(255,0,0,0.8);
+  transition: all 0.3s ease;
+  animation: pulse 1.5s infinite alternate;
+}
+
+
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from { transform: translateY(-40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
